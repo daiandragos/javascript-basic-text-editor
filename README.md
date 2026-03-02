@@ -1,4 +1,4 @@
-# Basic Text Editor
+# [ Basic Text Editor](https://daiandragos.github.io/javascript-basic-text-editor/)
 
 A simple text editor created solely with core web technologies (HTML, CSS & JS) relying on the browser API.
 Offers simple text formatting features:
