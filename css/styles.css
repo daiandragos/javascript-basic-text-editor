@@ -32,10 +32,16 @@ header h1 {
     max-width: 80vw;
     font-size: 1.5rem;
     margin-top: 1rem;
+    padding: 0.5rem
 }
 
 .text-editor-content p{
-    margin: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.text-editor-content:empty::before {
+  content: attr(data-placeholder);
+  color: #999;
 }
 
 .toolbar-btn {
@@ -59,7 +65,7 @@ blockquote {
   background: #f9f9f9;
   border-left: 10px solid yellowgreen;
   margin: 0.2rem 1rem;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 2rem;
 }
 
 .link-dialog {

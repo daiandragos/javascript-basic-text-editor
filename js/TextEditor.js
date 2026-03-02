@@ -54,6 +54,7 @@ export default class TextEditor {
 
     this.#wrapper.appendChild(this.#content);
     this.#container.appendChild(this.#wrapper);
+    this.#content.focus();
 
     this.#selection = new Selection(this.#content);
     this.#formatter = new Formatter(this.#content, this.#selection);
