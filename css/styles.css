@@ -1,0 +1,128 @@
+body {
+    background-color: #FBEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #6367FF
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+.text-editor {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.text-editor-content {
+    overflow:auto;
+    margin-top: 10px;
+    outline:none;
+    background-color : #FCF8F8;
+    height: 60vh;
+    width: 800px;
+    max-width: 80vw;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.text-editor-content p{
+    margin: 0.5rem;
+}
+
+.toolbar-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+}
+
+.toolbar-btn:hover {
+    background-color: lightgreen;
+}
+
+.toolbar-btn.is-active {
+    background-color: lime;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid yellowgreen;
+  margin: 0.2rem 1rem;
+  padding: 0.4rem 1rem;
+}
+
+.link-dialog {
+    display:none;
+}
+.link-dialog.is-open {
+    display: block;
+}
+.link-dialog-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+}
+.link-dialog-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+}
+.link-dialog-header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+.link-dialog-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+.link-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.link-dialog-btn {
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.link-dialog-btn-cancel {
+    background: #ddd;
+    color: #333;
+}
+.link-dialog-btn-cancel:hover {
+    background: #c8c8c8;
+}
+.link-dialog-btn-submit {
+    background: #4a8cff;
+    color: white;
+}
+.link-dialog-btn-submit:hover {
+    background: #3377ff;
+}
