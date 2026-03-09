@@ -3,8 +3,7 @@
 A simple text editor created solely with core web technologies (HTML, CSS & JS) relying on the browser API.
 Offers simple text formatting features:
 
-- Bold
-
+* Bold
 * Italic
 * Underline
 * Strikethrough
